@@ -4,4 +4,4 @@
 - IPv6: [gaoyifan/china-operator-ip](https://github.com/gaoyifan/china-operator-ip)
 
 ## 🏅 版权说明
-GeoIP® 商标版权归 MaxMind 公司所有。
+GeoIP® 商标版权归 MaxMind 公司所有
