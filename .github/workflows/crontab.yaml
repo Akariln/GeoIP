@@ -43,7 +43,7 @@ jobs:
     
     - name: Obtain CN IPv6 lists
       run: |
-        wget -qO- "https://raw.githubusercontent.com/gaoyifan/china-operator-ip/ip-lists/china6.txt" | grep -v '#' >> dist/chnroutes.txt
+        wget -qO- "https://gaoyifan.github.io/china-operator-ip/china6.txt" | grep -v '#' >> dist/chnroutes.txt
 
     - name: Generate GeoIP2 database
       run: |
