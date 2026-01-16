@@ -38,7 +38,7 @@ jobs:
     - name: Obtain CN IPv4 lists
       run: |
         wget -qO- "https://chnroutes2.cdn.skk.moe/chnroutes.txt" | grep -v '#' > dist/chnroutes.txt
-    
+
     - name: Obtain CN IPv6 lists
       run: |
         wget -qO- "https://gaoyifan.github.io/china-operator-ip/china6.txt" | grep -v '#' >> dist/chnroutes.txt
@@ -49,7 +49,7 @@ jobs:
         cd dist
         ./ipip2mmdb -s ./chnroutes.txt -d Country.mmdb
         cd $CURRENT_DIR
-    
+
     - name: Push artifacts to release branch
       run: |
         git config --local user.email "${{ github.actor }}@users.noreply.github.com"
@@ -70,7 +70,7 @@ jobs:
 
         git branch -D release
         git branch -m release
-            
+
     - name: GitHub Push
       uses: ad-m/github-push-action@v0.6.0
       with:
